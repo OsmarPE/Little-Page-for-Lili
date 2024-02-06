@@ -1,0 +1,42 @@
+---
+import Bg from '../components/Bg.astro';
+import Footer from './Footer.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Pequeña pagina para LiliCross con el fin de poder mostrar su redes sociales y el contenido que hace ">
+		<title>{title}</title>
+	</head>
+	<body>
+		<Bg/>
+		<slot />
+		<Footer/>
+	</body>
+</html>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+	body{
+		font-family: 'Outfit', sans-serif;
+		overflow-x: hidden;
+	}
+	html{
+		scroll-behavior: smooth;
+
+	}
+
+
+</style>

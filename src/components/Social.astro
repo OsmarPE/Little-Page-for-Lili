@@ -1,0 +1,19 @@
+---
+interface Props {
+    class: string;
+    href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href} class={`size-11 grid place-items-center border-2 rounded-full text-2xl transition ${Astro.props.class}`}>
+    <slot />
+</a>
+
+<style>
+    .circle,.insta{
+        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    }
+  
+</style>

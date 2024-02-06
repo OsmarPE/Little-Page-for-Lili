@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Perfil from "../img/perfil.jpg";
+import Social from "../components/Social.astro";
+import Container from "../components/Container.astro";
+import Header from "../components/Header.astro";
+import "remixicon/fonts/remixicon.css";
+import GalleryItem from "../components/GalleryItem.astro";
+---
+
+<Layout title="LiliCross">
+	<Header/>
+	<main>
+		<section id="start" class="hero pt-32 pb-11">
+			<Container>
+				<div class="text-center">
+					<figure class="mx-auto size-24 mb-4 p-1 rounded-full shadow-2xl">
+						<img class="block object-cover size-full rounded-full" src={Perfil.src} alt="perfil of a girl" />
+					</figure>
+	
+					<h1 class="font-bold text-4xl mb-4">LiliCross</h1>
+					<p class="text-gray-500 max-w-96 mx-auto text-pretty mb-6">
+						Hola!! Soy Lili 🐞 Mamá gamer 👶🏻👧🏻 Amante del rol, Reina de
+						las pifias 🎲🎲 de las risas y el drama!
+					</p>
+					<div id="socials" class="flex items-center gap-4 justify-center">
+						<Social href="https://www.tiktok.com/@lilicross_oficial?lang=es" class="relative isolate border-0 circle">
+							<div class="bg-white absolute inset-0.5 grid transition-all place-items-center rounded-full">
+								<i class="ri-instagram-line insta "></i>
+							</div>
+						</Social>
+						<Social href="https://www.twitch.tv/lilicross" class="border-[#B659FF] text-[#B659FF] hover:bg-[#F4E7FF]">
+							<i class="ri-twitch-fill"></i>
+						</Social>
+						<Social href="https://twitter.com/LiliCross_" class="border-[#1D9BF0] text-[#1D9BF0] hover:bg-[#E7F5FF]">
+							<i class="ri-twitter-fill"></i>
+						</Social>
+						<Social href="/" class="border-black text-black hover:bg-slate-100">
+							<i class="ri-tiktok-fill"></i>
+						</Social>
+						<Social href="https://www.youtube.com/c/LiliCross" class="border-red-500 text-red-500 hover:bg-red-50">
+							<i class="ri-youtube-fill"></i>
+						</Social>
+					</div>
+					<a title="Va al directo de Lilicros" class="inline-block tracking-wider shadow-primary mt-9 py-2 px-6 rounded-3xl transition bg-[#6D9C6B] hover:bg-[#75a573] border-2 border-black text-white font-bold" href="https://www.twitch.tv/lilicross">Ver Directo</a>
+				</div>
+			</Container>
+		</section>
+		<section id="gallery" class="pt-16 mb-28 text-center" >
+			<Container>
+				<div class="">
+					<h2 class="font-semibold mb-2 text-3xl text-[#5ac8f4]">Galeria</h2>
+					<p class="text-gray-500">Pequeña galeria de fotos del rol de Lili con Samara </p>
+					<div class="grid gap-5 mt-14 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+						<GalleryItem src="item1.jpg" shadowColor="orange"/>
+						<GalleryItem src="item2.jpg" shadowColor="green"/>
+						<GalleryItem src="item3.jpg" shadowColor="blue"/>
+						<GalleryItem src="item4.jpg" shadowColor="grey"/>
+						<GalleryItem src="item5.jpg" shadowColor="yellow"/>
+						<GalleryItem src="item6.jpg" shadowColor="red"/>
+						<GalleryItem src="item7.jpg" shadowColor="turques"/>
+						<GalleryItem src="item8.jpg" shadowColor="orange"/>
+						<GalleryItem src="item9.jpg" shadowColor="green"/>
+					</div>
+				</div>	
+			</Container>
+		</section>
+	</main>
+</Layout>
+
+
+<style>
+	.hero{
+		position: relative;
+
+	}
+	@media screen and (width >= 768px) {
+		
+		.hero::after,.hero::before{
+			content: '';
+			position: absolute;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.hero::after{
+			width: 40%;
+			background-size: 50%;
+			transform: translateX(-30%);
+			inset: 0 auto 0 0;
+			background-image: url('../img/bg.png');
+	
+		}
+		.hero::before{
+			width: 40%;
+			background-size: 50%;
+			transform: translateX(30%);
+			inset: 0 0 0 auto;
+			background-image: url('../img/bg2.png');
+		}
+		
+	}
+	.insta{
+		background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+		background-clip: text;
+		color: transparent;
+	}
+
+
+
+
+</style>
