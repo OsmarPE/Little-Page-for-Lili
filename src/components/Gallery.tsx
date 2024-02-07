@@ -26,9 +26,9 @@ function Gallery() {
         <div>
             <header className="relative isolate w-max shadow-primary mx-auto mt-6 bg-[#7EE7D6] backdrop-blur-sm p-1 flex items-center rounded-3xl border-2 border-black">
                 <div className="gallery__body flex">
-                    <button onClick={() => changeImages('samara',0)} title="Te lleva al apartado de galerias de samara" className="block w-32 py-1.5 transition-colors hover:text-black/70" >Samara</button>
-                    <button onClick={() => changeImages('eileen',0)} title="Te lleva al apartado de galerias de eileen" className="block w-32 py-1.5 transition-colors hover:text-black/70">Eileen</button>
-                    <button onClick={() => changeImages('anatema',0)} title="Te lleva al apartado de galerias de Anatema" className="block w-32 py-1.5 transition-colors hover:text-black/70">Anatema</button>
+                    <button onClick={() => changeImages('samara',0)} title="Te lleva al apartado de galerias de samara" className="block w-24 md:w-32 py-1.5 transition-colors hover:text-black/70" >Samara</button>
+                    <button onClick={() => changeImages('eileen',0)} title="Te lleva al apartado de galerias de eileen" className="block w-24 md:w-32 py-1.5 transition-colors hover:text-black/70">Eileen</button>
+                    <button onClick={() => changeImages('anatema',0)} title="Te lleva al apartado de galerias de Anatema" className="block w-24 md:w-32 py-1.5 transition-colors hover:text-black/70">Anatema</button>
                 </div>
                 <div className={`gallery__btn ${galleryName}`}></div>
             </header>
