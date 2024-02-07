@@ -5,7 +5,7 @@ import Social from "../components/Social.astro";
 import Container from "../components/Container.astro";
 import Header from "../components/Header.astro";
 import "remixicon/fonts/remixicon.css";
-import GalleryItem from "../components/GalleryItem.astro";
+import Gallery from "../components/Gallery";
 ---
 
 <Layout title="LiliCross">
@@ -50,18 +50,8 @@ import GalleryItem from "../components/GalleryItem.astro";
 			<Container>
 				<div class="">
 					<h2 class="font-semibold mb-2 text-3xl text-[#5ac8f4]">Galeria</h2>
-					<p class="text-gray-500">Pequeña galeria de fotos del rol de Lili con Samara </p>
-					<div class="grid gap-5 mt-14 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
-						<GalleryItem src="item1.jpg" shadowColor="orange"/>
-						<GalleryItem src="item2.jpg" shadowColor="green"/>
-						<GalleryItem src="item3.jpg" shadowColor="blue"/>
-						<GalleryItem src="item4.jpg" shadowColor="grey"/>
-						<GalleryItem src="item5.jpg" shadowColor="yellow"/>
-						<GalleryItem src="item6.jpg" shadowColor="red"/>
-						<GalleryItem src="item7.jpg" shadowColor="turques"/>
-						<GalleryItem src="item8.jpg" shadowColor="orange"/>
-						<GalleryItem src="item9.jpg" shadowColor="green"/>
-					</div>
+					<p class="text-gray-500">Pequeña galeria de fotos de los roles de LiliCross</p>
+					<Gallery client:visible/>
 				</div>	
 			</Container>
 		</section>

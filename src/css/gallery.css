@@ -1,0 +1,33 @@
+.gallery__btn{
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    bottom: 2px;
+    width: 33.3%;
+    border-radius: 30px;
+    z-index: -1;
+    border: 2px solid black;
+    background-color: #F9E551;
+
+}
+
+.gallery__btn.eileen{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.gallery__btn.anatema{
+    left: auto;
+    right: 4px;
+}
+
+
+.gallery__numbers::after{
+    content: '';
+    position: absolute;
+    inset: 0 8px 0;
+    border-radius: 1rem;
+    border: 2px solid black;
+    transform: translateY(15%);
+    z-index: -1;
+}

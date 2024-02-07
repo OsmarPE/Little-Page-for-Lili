@@ -1,0 +1,37 @@
+.galleryItem{
+    position: relative;
+}
+.galleryItem::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-radius: 1.5rem;
+    border: 2px solid black;
+    transform: translate(7px,7px);
+    z-index: -1;
+}
+
+.galleryItem.orange::after{
+    background-color: #FFE9DF;
+}
+
+.galleryItem.blue::after{
+    background-color: #D6F2FF;
+}
+
+.galleryItem.green::after{
+    background-color: #d2ffd3;
+}
+
+.galleryItem.grey::after{
+    background-color: #F1F2F8;
+}
+.galleryItem.yellow::after{
+    background-color: #FEF4D0;
+}
+.galleryItem.red::after{
+    background-color: #FFEBE5;
+}
+.galleryItem.turques::after{
+    background-color: #cdfffc;
+}

@@ -1,0 +1,1 @@
+export type typeColor = 'blue' | 'orange' | 'green' | 'grey' | 'yellow' | 'red' |'turques'

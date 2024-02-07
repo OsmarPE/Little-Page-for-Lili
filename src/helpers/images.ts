@@ -1,0 +1,159 @@
+interface imagesPros{
+    src:string,
+    color: 'blue' | 'orange' | 'green' | 'grey' | 'yellow' | 'red' |'turques'
+}
+const imagesEileen:imagesPros[] = [
+    {
+        color:"orange",
+        src:'ei10.jpg'
+    },
+    {
+        color:"green",
+        src:'ei2.jpg'
+    },
+    {
+        color:"blue",
+        src:'ei3.jpg'
+    },
+    {
+        color:"grey",
+        src:'ei4.jpg'
+    },
+    {
+        color:"yellow",
+        src:'ei5.jpg'
+    },
+    {
+        color:"red",
+        src:'ei6.jpg'
+    },
+    {
+        color:"turques",
+        src:'ei11.jpg'
+    },
+    {
+        color:"orange",
+        src:'ei12.jpg'
+    },
+    {
+        color:"green",
+        src:'ei9.jpg'
+    },
+    {
+        color:"orange",
+        src:'ei13.jpg'
+    },
+    {
+        color:"grey",
+        src:'ei14.jpg'
+    },
+    {
+        color:"grey",
+        src:'ei15.jpg'
+    },
+]
+const imagesSamara:imagesPros[] = [
+    {
+        color:"orange",
+        src:'item1.jpg'
+    },
+    {
+        color:"green",
+        src:'item2.jpg'
+    },
+    {
+        color:"blue",
+        src:'item3.jpg'
+    },
+    {
+        color:"grey",
+        src:'item4.jpg'
+    },
+    {
+        color:"yellow",
+        src:'item5.jpg'
+    },
+    {
+        color:"red",
+        src:'item6.jpg'
+    },
+    {
+        color:"turques",
+        src:'item7.jpg'
+    },
+    {
+        color:"orange",
+        src:'item8.jpg'
+    },
+    {
+        color:"green",
+        src:'item9.jpg'
+    },
+    {
+        color:"red",
+        src:'item10.jpg'
+    },
+    {
+        color:"yellow",
+        src:'item11.jpg'
+    },
+    {
+        color:"turques",
+        src:'item12.jpg'
+    },
+    {
+        color:"grey",
+        src:'item13.jpg'
+    },
+]
+
+const imagesAna:imagesPros[] = [
+    {
+        color:'blue',
+        src:'ana1.jpg'
+    },
+    {
+        color:'green',
+        src:'ana2.jpg'
+    },
+    {
+        color:'grey',
+        src:'ana3.jpg'
+    },
+    {
+        color:'orange',
+        src:'ana4.jpg'
+    },
+    {
+        color:'red',
+        src:'ana5.jpg'
+    },
+    {
+        color:'turques',
+        src:'ana6.jpg'
+    },
+    {
+        color:'yellow',
+        src:'ana7.jpg'
+    },
+    {
+        color:'blue',
+        src:'ana8.jpg'
+    },
+    {
+        color:'grey',
+        src:'ana9.jpg'
+    },
+]
+
+
+
+ export const gallery = {
+    samara:imagesSamara,
+    eileen:imagesEileen,
+    anatema:imagesAna
+}
+
+export const getLengthForPagination = (array:any[]):number => {
+   return Math.ceil(array.length / 9)
+}

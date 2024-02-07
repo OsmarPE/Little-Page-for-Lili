@@ -1,0 +1,25 @@
+.number{
+    position: relative;
+    inset: 0;
+    isolation: isolate;
+}
+
+.number::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color:#F9E450;
+    border-radius: .75rem;
+    z-index: -1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: all 0.4s ease;
+}
+
+
+.number:hover::after{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.number.active::after{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}

@@ -5,6 +5,7 @@ export default {
 		extend: {
 			boxShadow:{
 				primary:'0 4px #000',
+				secundary:'3px 4px #000',
 			}
 		},
 	},
